@@ -1,0 +1,43 @@
+{
+  "name": "ruoyi-plus-soybean-docs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "The documentation of RuoYi-Plus-Soybean",
+  "author": {
+    "name": "xlsea",
+    "email": "xlsea@linux.do",
+    "url": "https://gitee.com/xlsea/ruoyi-plus-soybean"
+  },
+  "license": "MIT",
+  "homepage": "https://docs.ruoyi.xlsea.cn",
+  "repository": {
+    "url": "https://gitee.com/xlsea/ruoyi-plus-soybean.git"
+  },
+  "bugs": {
+    "url": "https://gitee.com/xlsea/ruoyi-plus-soybean/issues"
+  },
+  "engines": {
+    "node": ">=18.12.0",
+    "pnpm": ">=8.7.0"
+  },
+  "scripts": {
+    "build": "vitepress build",
+    "cleanup": "soy cleanup",
+    "commit": "soy git-commit",
+    "commit:zh": "soy git-commit -l=zh-cn",
+    "dev": "vitepress dev --port 9257",
+    "lint": "eslint . --fix",
+    "preview": "vitepress serve",
+    "release": "soy release",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck",
+    "update-pkg": "soy ncu"
+  },
+  "devDependencies": {
+    "@soybeanjs/cli": "1.3.0",
+    "@soybeanjs/eslint-config": "1.6.1",
+    "@types/node": "22.15.19",
+    "eslint": "9.27.0",
+    "typescript": "5.8.3",
+    "vitepress": "1.6.3"
+  }
+}
