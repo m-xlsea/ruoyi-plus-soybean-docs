@@ -39,10 +39,10 @@ export default defineConfig({
       copyright: 'Copyright © 2024 xlsea'
     },
     nav: [
-      {
-        text: '捐赠',
-        link: '/other/donate'
-      },
+      { text: '指引', link: '/guide/intro', activeMatch: '/guide/' },
+      { text: '常见问题', link: '/faq/', activeMatch: '/faq/' },
+      { text: '合作', link: '/cooperate/', activeMatch: '/cooperate/' },
+      { text: '捐赠', link: '/other/donate' },
       {
         text: '链接',
         items: [
@@ -108,6 +108,27 @@ export default defineConfig({
             {
               text: '同步代码',
               link: '/guide/sync'
+            }
+          ]
+        },
+        {
+          text: 'Hooks 函数',
+          items: [
+            {
+              text: 'useDict',
+              link: '/guide/hooks/dict'
+            },
+            {
+              text: 'useDownload',
+              link: '/guide/hooks/download'
+            },
+            {
+              text: 'useTable',
+              link: '/guide/hooks/use-table'
+            },
+            {
+              text: 'useTreeTable',
+              link: '/guide/hooks/use-tree-table'
             }
           ]
         }

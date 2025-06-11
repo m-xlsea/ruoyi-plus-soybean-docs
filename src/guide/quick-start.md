@@ -1,8 +1,8 @@
 # 快速开始
 
-本文会帮助你从头启动项目
+本指南将帮助你在几分钟内启动 RuoYi-Plus-Soybean 项目，开始你的开发之旅。
 
-### 代码生成与菜单更新
+## 📝 代码生成与菜单更新
 
 项目提供了代码生成工具和菜单SQL更新文件，在 <a href="https://gitee.com/xlsea/ruoyi-plus-soybean/tree/master/docs" target="_blank">docs</a> 目录下：
 
@@ -15,112 +15,196 @@
   - 菜单数据更新SQL文件位于 `docs/sql` 目录
   - 在系统初始化或更新时，需要执行相应的SQL文件来更新菜单数据
 
-## 环境准备
+## 🔧 环境要求
 
-确保你的环境满足以下要求：
+在开始之前，请确保你的开发环境满足以下要求：
 
-- **git**: 你需要git来克隆和管理项目版本。[安装教程](../tutorial/git.md)
-- **NodeJS**: >=18.12.0，推荐 18.19.0 或更高。[安装教程](../tutorial/nodejs.md)
-- **pnpm**: >= 8.7.0，推荐最新版本。
+| 环境        | 版本要求   | 说明                           |
+| ----------- | ---------- | ------------------------------ |
+| **Node.js** | >= 18.20.0 | 推荐使用 LTS 版本              |
+| **pnpm**    | >= 8.7.0   | 必须使用 pnpm，不支持 npm/yarn |
+| **Git**     | 最新版本   | 用于代码管理                   |
 
-## VSCode插件
-
-本项目推荐使用 VSCode 进行开发，项目里面已内置 VSCode 配置，包含推荐的插件和设置。
-
-以下为推荐的插件：
-
-- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) - 自动添加 HTML/XML 结束标签
-- [Auto Complete Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag) - 为 HTML/XML 添加关闭标签和自动重命名成对的标签
-- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) - 自动重命名成对的 HTML/XML 标签
-- [Color Highlight](https://github.com/naumovs/vscode-ext-color-highlight) - 颜色高亮插件
-- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) - 高亮.env 文件
-- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - 统一不同编辑器的一些配置
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 代码检查
-- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - Git 图形化操作工具
-- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - 显示具体某行代码的 git 信息
-- [Icônes](https://marketplace.visualstudio.com/items?itemName=afzalsayed96.icones) - 搜索 iconify 图标的插件
-- [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Iconify 图标实时显示的插件
-- [i18n Ally](https://marketplace.visualstudio.com/items?itemName=Lokalise.i18n-ally) - i18n 国际化插件
-- [javascript console utils](https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils) - 提供快捷键 ctrl+l 直接输入 console.log()
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - 图标主题，显示文件和文件多种图标
-- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) - 主题
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - 代码格式化插件
-- [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss) - unocss 写法提示插件
-- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 服务插件
-- [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets) - Vue2、Vue3 写法提示插件
-
-## 代码获取
-
-### 从 GitHub 获取代码
-
-```bash
-# 克隆代码
-git clone https://github.com/m-xlsea/ruoyi-plus-soybean.git
-```
-
-### 从 Gitee 获取代码
-
-```bash
-# 克隆代码
-git clone https://gitee.com/xlsea/ruoyi-plus-soybean.git
-```
-
-::: warning 注意
-最新版本的代码以 Gitee 为准。
+::: warning ⚠️ 重要提示
+本项目**强制使用 pnpm**，使用其他包管理器可能导致依赖问题。
 :::
 
-### 安装依赖
+### 环境检查
 
-安装项目依赖
+运行以下命令检查你的环境：
 
 ```bash
-pnpm i
+# 检查 Node.js 版本
+node --version
+# 应该输出 v18.20.0 或更高版本
+
+# 检查 pnpm 版本
+pnpm --version
+# 应该输出 8.7.0 或更高版本
+
+# 检查 Git 版本
+git --version
 ```
 
-## 插件配置
+### 安装 pnpm（如果未安装）
 
-### 安装 Vue - Official，禁用 Vetur
+```bash
+# 使用 npm 全局安装
+npm install pnpm -g
 
-- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 服务插件
-
-## npm scripts
-
-```json
-{
-  // 构建打包(prod环境)
-  "build": "vite build --mode prod",
-  // 构建打包(dev环境)
-  "build:dev": "vite build --mode dev",
-  // 构建打包(test环境)
-  "build:test": "vite build --mode test",
-  // 删除主项目及子项目的 node_modules, dist, pnpm-lock.yaml
-  "cleanup": "sa cleanup",
-  // 提交代码 (生成符合 Conventional Commits standard 的提交信息)
-  "commit": "sa git-commit",
-  // 本地运行(dev环境)
-  "dev": "vite --mode dev",
-  // 本地运行(test环境)
-  "dev:test": "vite --mode test",
-  // 本地运行(prod环境)
-  "dev:prod": "vite --mode prod",
-  // 生成路由
-  "gen-route": "sa gen-route",
-  // eslint检查并自动修复
-  "lint": "eslint . --fix",
-  // 初始化 simple-git-hooks
-  "prepare": "simple-git-hooks",
-  // 本地环境预览构建后的dist
-  "preview": "vite preview",
-  // 发布
-  "release": "sa release",
-  // vue文件的ts检查
-  "typecheck": "vue-tsc --noEmit --skipLibCheck",
-  // 更新依赖包
-  "update-pkg": "sa update-pkg"
-}
+# 或使用 corepack（Node.js 16.13+ 内置）
+corepack enable
+corepack prepare pnpm@latest --activate
 ```
 
-## 目录说明
+# 📥 项目安装
+
+### 1. 克隆仓库
+
+```bash
+# 使用 HTTPS
+git clone https://github.com/m-xlsea/ruoyi-plus-soybean.git
+
+# 或使用 SSH
+git clone git@github.com:m-xlsea/ruoyi-plus-soybean.git
+
+# 进入项目目录
+cd ruoyi-plus-soybean
+```
+
+### 2. 配置镜像源（可选）
+
+为了加速依赖安装，建议配置国内镜像源：
+
+```bash
+# 设置淘宝镜像
+pnpm config set registry https://registry.npmmirror.com
+
+# 验证配置
+pnpm config get registry
+```
+
+### 3. 安装依赖
+
+```bash
+# 安装项目依赖
+pnpm install
+```
+
+::: tip 💡 安装说明
+
+- 首次安装可能需要几分钟时间
+- 如果安装失败，请删除 `node_modules` 和 `pnpm-lock.yaml` 后重试
+- 项目使用 Monorepo 架构，会安装多个包的依赖
+  :::
+
+### 4. 启动开发服务器
+
+```bash
+# 启动开发环境
+pnpm dev
+
+# 或者指定环境启动
+pnpm dev:test    # 测试环境
+pnpm dev:prod    # 生产环境
+```
+
+启动成功后，你将看到类似输出：
+
+```
+  VITE v6.2.0  ready in 1234 ms
+
+  ➜  Local:   http://localhost:9527/
+  ➜  press h + enter to show help
+```
+
+### 5. 打开浏览器
+
+在浏览器中访问 `http://localhost:9527`，你将看到登录界面。
+
+**默认账号信息：**
+
+- 用户名：`admin`
+- 密码：`admin123`
+
+## 🔧 开发配置
+
+### 环境变量配置
+
+项目提供了三个环境配置文件：
+
+- `.env.dev` - 开发环境
+- `.env.test` - 测试环境
+- `.env.prod` - 生产环境
+
+## 🚀 常用命令
+
+### 开发命令
+
+```bash
+# 启动开发服务器
+pnpm dev
+
+# 启动测试环境
+pnpm dev:test
+
+# 启动生产环境
+pnpm dev:prod
+```
+
+### 构建命令
+
+```bash
+# 构建生产版本
+pnpm build
+
+# 构建开发版本
+pnpm build:dev
+
+# 构建测试版本
+pnpm build:test
+
+# 预览构建结果
+pnpm preview
+```
+
+### 代码质量
+
+```bash
+# 代码格式检查和修复
+pnpm lint
+
+# TypeScript 类型检查
+pnpm typecheck
+
+# 生成路由
+pnpm gen-route
+```
+
+### Git 提交
+
+```bash
+# 交互式提交（英文）
+pnpm commit
+
+# 交互式提交（中文）
+pnpm commit:zh
+```
+
+### 依赖管理
+
+```bash
+# 更新依赖包
+pnpm update-pkg
+
+# 清理项目
+pnpm cleanup
+
+# 发布新版本
+pnpm release
+```
+
+## 🏗️ 项目结构概览
 
 ```
 ruoyi-plus-soybean
@@ -160,3 +244,28 @@ ruoyi-plus-soybean
 │   └── views                # 页面组件
 └── vite.config.ts           # Vite 配置
 ```
+
+## ❓ 常见问题
+
+### 启动失败怎么办？
+
+1. **检查 Node.js 版本**：确保版本 >= 18.20.0
+2. **重新安装依赖**：删除 `node_modules` 和 `pnpm-lock.yaml`，然后重新 `pnpm install`
+3. **检查端口占用**：确保 9527 端口未被占用
+4. **查看错误日志**：根据控制台错误信息排查问题
+
+### 后端连接失败？
+
+1. **检查后端服务**：确保 RuoYi-Vue-Plus 后端服务正常运行
+2. **检查 API 地址**：确认 `.env.dev` 中的 `VITE_APP_BASE_API` 配置正确
+3. **检查网络连接**：确保前后端能够正常通信
+
+### 权限问题？
+
+1. **检查登录状态**：确保使用正确的账号密码登录
+2. **检查角色权限**：确认当前用户拥有相应的菜单和操作权限
+3. **清除缓存**：尝试清除浏览器缓存和 localStorage
+
+::: tip 💡 获取帮助
+如果遇到其他问题，可以查看 [常见问题](/faq/) 或在 [Gitee Issue](https://gitee.com/xlsea/ruoyi-plus-soybean/issues) 上提交 Issue。
+:::
