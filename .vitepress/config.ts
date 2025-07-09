@@ -43,9 +43,9 @@ export default defineConfig({
     },
     nav: [
       { text: '指引', link: '/guide/intro', activeMatch: '/guide/' },
-      { text: '常见问题', link: '/faq/', activeMatch: '/faq/' },
-      { text: '合作', link: '/cooperate/', activeMatch: '/cooperate/' },
-      { text: '捐赠', link: '/other/donate' },
+      { text: '常见问题', link: '/faq', activeMatch: '/faq' },
+      { text: '合作', link: '/cooperate', activeMatch: '/cooperate' },
+      { text: '捐赠', link: '/other/donate', activeMatch: '/other/donate' },
       {
         text: '链接',
         items: [
@@ -89,6 +89,23 @@ export default defineConfig({
               {
                 text: 'Soybean Admin',
                 link: 'https://soybeanjs.cn/'
+              }
+            ]
+          },
+          {
+            text: '友情链接',
+            items: [
+              {
+                text: "Annlcc's Blog",
+                link: 'https://www.annlcc.cn?source=ruoyi-plus-soybean'
+              },
+              {
+                text: 'Snail Job',
+                link: 'https://preview.snailjob.opensnail.com?source=ruoyi-plus-soybean'
+              },
+              {
+                text: 'Aizuda',
+                link: 'https://naiveui.aizuda.com?source=ruoyi-plus-soybean'
               }
             ]
           }
