@@ -23,7 +23,7 @@ RuoYi-Plus-Soybean 是一个现代化的企业级多租户管理系统，它结�
 
 - **前沿技术应用**：采用 Vue3, Vite6, TypeScript, Pinia 和 UnoCSS 等最新流行的技术栈。
 - **清晰的项目架构**：采用 pnpm monorepo 架构，结构清晰，优雅易懂。
-- **严格的代码规范**：遵循 [SoybeanJS 规范](/zh/standard/)，集成了eslint, prettier 和 simple-git-hooks，保证代码的规范性。
+- **严格的代码规范**：遵循 [SoybeanJS 规范](https://docs.soybeanjs.cn/zh/standard/)，集成了eslint, prettier 和 simple-git-hooks，保证代码的规范性。
 - **TypeScript**： 支持严格的类型检查，提高代码的可维护性。
 - **丰富的主题配置**：内置多样的主题配置，与 UnoCSS 完美结合。
 - **内置国际化方案**：轻松实现多语言支持。
@@ -108,5 +108,5 @@ RuoYi-Plus-Soybean 是一个现代化的企业级多租户管理系统，它结�
 ---
 
 ::: tip 💡 开始使用
-准备好开始使用 RuoYi-Plus-Soybean 了吗？查看我们的 [快速开始](/guide/quick-start/) 指南，几分钟内就能运行起来！
+准备好开始使用 RuoYi-Plus-Soybean 了吗？查看我们的 [快速开始](/guide/quick-start) 指南，几分钟内就能运行起来！
 :::

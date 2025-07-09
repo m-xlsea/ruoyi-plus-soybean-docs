@@ -87,7 +87,7 @@ const userStatusLabel = transformDictData('0');
 ### 使用组件
 
 ```ts
-useDict('user_status');
+useDict('sys_normal_disable');
 
 <DictRadio v-model:value="model.status" dict-code="sys_normal_disable" />
 <DictSelect v-model:value="model.status" dict-code="sys_normal_disable" />

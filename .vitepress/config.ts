@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+  title: 'RuoYi-Plus-Soybean',
+  description:
+    'RuoYi-Plus-Soybean 是基于 RuoYi-Vue-Plus 和 Soybean Admin 的快速开发框架，提供了丰富的 Hooks 函数和组件，方便开发者快速开发。',
   head: [
     ['meta', { name: 'author', content: 'xlsea' }],
     [
@@ -30,9 +33,9 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/m-xlsea/ruoyi-plus-soybean' }
     ],
     algolia: {
-      appId: '98WN1RY04S',
-      apiKey: '13e9f5767b774422a5880723d9c23265',
-      indexName: 'ruoyi-plus-soybean'
+      appId: 'ED89FPJ6YB',
+      apiKey: '3171cb74a74a25de316aab968c0582b3',
+      indexName: 'docs_ruoyi_xlsea_cn_ed89fpj6yb_pages'
     },
     footer: {
       message: '根据 MIT 许可证发布',
