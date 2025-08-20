@@ -21,3 +21,7 @@
 ## Soybean Admin 常见问题
 
 请参考 [Soybean Admin 常见问题](https://docs.soybeanjs.cn/zh/faq)
+
+## 字典使用了多语言导致的导出问题
+
+此问题需要后端根据实际的业务情况自行处理，本项目提供了本地导出方法 [export.js](https://gitee.com/xlsea/ruoyi-plus-soybean/blob/dev/src/utils/export.ts)。
