@@ -13,17 +13,17 @@ hero:
     alt: RuoYi-Plus-Soybean
   actions:
     - theme: brand
-      text: 开始
+      text: 快速开始
       link: /guide/quick-start
-    - theme: alt
-      text: 介绍
-      link: /guide/intro
-    - theme: alt
-      text: 在 Gitee 上查看
-      link: https://gitee.com/xlsea/ruoyi-plus-soybean
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/m-xlsea/ruoyi-plus-soybean
+    - theme: alt
+      text: 在 GitCode 上查看
+      link: https://gitcode.com/xlsea/ruoyi-plus-soybean
+    - theme: alt
+      text: 在 Gitee 上查看
+      link: https://gitee.com/xlsea/ruoyi-plus-soybean
 
 features:
   - icon: 🆕

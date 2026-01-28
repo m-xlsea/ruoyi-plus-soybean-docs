@@ -43,6 +43,11 @@
   </div>
 
   <div style="display: flex; gap: 8px;">
+      <img style="border-radius: 50%;" src="https://foruda.gitee.com/images/1767163195088305580/5a4804ac_5601833.jpeg" width="24px" >
+      <span>愤怒的山竹 50元</span>
+  </div>
+
+  <div style="display: flex; gap: 8px;">
       <img style="border-radius: 50%;" src="https://foruda.gitee.com/images/1747030503230216352/6879cbe5_5601833.jpeg" width="24px" >
       <span>酷酷冬天 20元 + 20元</span>
   </div>
@@ -68,6 +73,11 @@
   </div>
 
   <div style="display: flex; gap: 8px;">
+      <img style="border-radius: 50%;" src="https://foruda.gitee.com/images/1764637922446468019/01ba6d7e_5601833.jpeg" width="24px" >
+      <span>椒盐蛋仔L 20元</span>
+  </div>
+
+  <div style="display: flex; gap: 8px;">
       <img style="border-radius: 50%;" src="https://foruda.gitee.com/images/1747190127964232140/5ffa5ac4_5601833.jpeg" width="24px" >
       <span>匿名用户 10元</span>
   </div>
@@ -80,6 +90,11 @@
   <div style="display: flex; gap: 8px;">
       <img style="border-radius: 50%;" src="https://foruda.gitee.com/images/1755658692318690727/c8357b90_5601833.jpeg" width="24px" >
       <span>有耳朵的明光 10元</span>
+  </div>
+
+  <div style="display: flex; gap: 8px;">
+      <img style="border-radius: 50%;" src="https://foruda.gitee.com/images/1747190127964232140/5ffa5ac4_5601833.jpeg" width="24px" >
+      <span>张宏俊 5元</span>
   </div>
 
   <div style="display: flex; gap: 8px;">

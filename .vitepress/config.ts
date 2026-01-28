@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { qqSvg } from './icon.js';
 
 export default defineConfig({
   title: 'RuoYi-Plus-Soybean',
@@ -29,8 +30,15 @@ export default defineConfig({
     logo: '/logo.svg',
     siteTitle: 'RuoYi-Plus-Soybean',
     socialLinks: [
+      { icon: 'github', link: 'https://github.com/m-xlsea/ruoyi-plus-soybean' },
+      { icon: 'gitcode', link: 'https://gitcode.com/xlsea/ruoyi-plus-soybean' },
       { icon: 'gitee', link: 'https://gitee.com/xlsea/ruoyi-plus-soybean' },
-      { icon: 'github', link: 'https://github.com/m-xlsea/ruoyi-plus-soybean' }
+      {
+        icon: {
+          svg: qqSvg
+        },
+        link: 'https://qm.qq.com/q/LJj6MIVto6'
+      }
     ],
     algolia: {
       appId: 'ED89FPJ6YB',
@@ -57,12 +65,16 @@ export default defineConfig({
             text: '源码仓库',
             items: [
               {
-                text: 'Gitee 仓库',
-                link: 'https://gitee.com/xlsea/ruoyi-plus-soybean'
+                text: 'GitHub 仓库',
+                link: 'https://github.com/m-xlsea/ruoyi-plus-soybean'
               },
               {
-                text: 'Github 仓库',
-                link: 'https://github.com/m-xlsea/ruoyi-plus-soybean'
+                text: 'GitCode 仓库',
+                link: 'https://gitcode.com/xlsea/ruoyi-plus-soybean'
+              },
+              {
+                text: 'Gitee 仓库',
+                link: 'https://gitee.com/xlsea/ruoyi-plus-soybean'
               }
             ]
           },
